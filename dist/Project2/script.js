@@ -1,6 +1,6 @@
 const main = document.querySelector("main");
 let s = "";
-let arrImages=["pokemon.jpeg","download.png","third.jpg","fourth.jpg"]
+let arrImages=["./public/pokemon.jpeg","./public/download.png","./public/third.jpg","./public/fourth.jpg"]
 let random=0;
 for (let i = 0; i <= 54; i++) {
     random=Math.floor(Math.random()*4)

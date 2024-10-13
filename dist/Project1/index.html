@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- <i class="ri-close-line"></i> -->
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex bg-white justify-between items-center">
+    <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+      <img src="public/todesktop-logo.bn2Qe8sb.png" alt="desktop-image" class="object-cover max-w-12 max-h-12" />
+      <span class="font-medium text-lg ">ToDesktop</span>
+    </a>
+    <div id="nav-menu" class="hidden lg:flex gap-12">
+      <a href="#" class="font-medium hover:text-hoverColor">Pricing</a>
+      <a href="#" class="font-medium hover:text-hoverColor">Docs</a>
+      <a href="#" class="font-medium hover:text-hoverColor">Changelog</a>
+      <a href="#" class="font-medium hover:text-hoverColor">Blogs</a>
+      <a href="#" class="font-medium hover:text-hoverColor">Login</a>
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end">
+      <button class=" flex justify-center items-center gap-2 border px-6 py-3 rounded-lg hover:border-gray-600 hover:bg-slate-500">
+        <img src="public/elctron.svg" alt="" />
+        <span>Electron Developers</span>
+        <img src="public/arrow.svg" alt="" />
+      </button>
+    </div>
+
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+      <i class="ri-menu-line text-gray-600"></i>
+    </button>
+
+    <!-- FixedDiv -->
+    <div id="nav-bar" class=" hidden z-10 fixed bg-white  lg:hidden inset-0 p-3">
+      <nav class="flex justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+          <img src="public/todesktop-logo.bn2Qe8sb.png" alt="desktop-image" class="object-cover max-w-12 max-h-12" />
+          <span class="font-medium text-lg font-display">ToDesktop</span>
+        </a>
+        <button class="text-xl lg:hidden">
+          <i class="ri-close-line" onclick="handleMenu()"></i>
+        </button>
+      </nav>
+      <div class="mt-6 lg:hidden">
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg">Pricing</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg">Docs</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg">ChangeLog</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg">Blog</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg">Login</a>
+      </div>
+      <div id="border" class="h-[1px] bg-gray-400 lg:hidden"></div>
+      <button
+        class="w-full flex items-center gap-2 border px-6 py-4 rounded-lg hover:bg-gradient-to-br from-red-300 via-orange-400 to-transparent mt-6 lg:hidden">
+        <img src="public/elctron.svg" alt="" />
+        <span>Electron Developers</span>
+        <!-- <img src="public/arrow.svg" alt=""> -->
+      </button>
+    </div>
+  </nav>
+
+   <main>
+    <div id="main" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+      <div id="hero-container"
+        class="max-w-4xl group: mx-auto px-6 pb-32 pt-6 flex flex-col sm:items-center sm:text-center sm:pt-12 ">
+        <div id="version-text"
+          class="flex my-6 gap-2 justify-start items-center border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit group shadow-md hover:-translate-y-1 transition hover:shadow-lg text-yellow-600">
+          <div class="h-2 w-2 border bg-yellow-400 rounded-full  border-yellow-600">
+          </div>
+          <p>v0.23.1</p>
+          <img class="group-hover:translate-x-[2px] transition" src="public/arrow.svg" alt="" />
+
+        </div>
+
+        <div id="hero-features" class="hidden sm:flex gap-8 my-6 ">
+          <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="ri-file-code-line"></i>
+            <p>Code Optionals</p>
+          </div>
+          <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="ri-hand"></i>
+            <p>Drag & drop builder</p>
+          </div>
+          <div class="flex justify-center items-center gap-2 text-gray-500">
+            <i class="ri-macbook-line"></i>
+            <p>Windows, Mac, Linux</p>
+          </div>
+        </div>
+
+        <h1 class="text-4xl font-semibold text-gray-800 leading-[70px] mt-4 sm:text-[76px]">Web app to desktop app in
+          minutes
+        </h1>
+        <p class="text-xl mt-4 text-gray-800 sm:text-2xl sm:mt-8 ">Take your web app codebase and transform it into a
+          cross platform desktop app with native functionality.</p>
+
+        <div id="buttons-containers" class="mt-12 flex flex-col gap-4 sm:flex-row ">
+          <button
+            class="px-8 py-3 font-semibold text-white bg-hoverColor rounded-lg shadow-sm hover:bg-opacity-90">Download
+            Now</button>
+          <button class="px-8 py-3 shadow-sm rounded-lg font-semibold border border-gray-400 hover:border-gray-800">Read
+            Docs</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
